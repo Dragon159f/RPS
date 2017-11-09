@@ -19,11 +19,14 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-
+ var input =  $("#input").val();
 
 
 //FUNCTIONS
-
+$("button").click(function(){
+        $("result").append(input);
+    });
+});
 
 
 // DOCUMENT READY FUNCTION
