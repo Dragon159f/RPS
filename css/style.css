@@ -2,3 +2,20 @@
     height: 340px;
     width: 540px;
 }
+.col-md-6{
+    width: auto;
+    height: auto;
+    max-width:100%
+}
+#result{
+    width: 150px;
+    height: 150px;
+}
+
+.row{
+    margin-top: 10px;
+}
+body{
+    background-color: blue;
+    color: red;
+}
