@@ -23,10 +23,15 @@
 
 
 //FUNCTIONS
-//$("button").click(function(){
-//        $("userside").append(input);
-//  });
-
 
 // DOCUMENT READY FUNCTION
+$(document).ready(function(){
+        var pokemon = ["row","pop","lit"];
+        var RPL = Math.floor((Math.random()*3));
+        console.log(pokemon[RPL]);
 
+        $("button").click(function(){
+                var input = $("#input").val();
+                $("#endtext").append(Math.floor(pokemon[RPL]));
+        });
+});
