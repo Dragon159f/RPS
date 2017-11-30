@@ -26,7 +26,11 @@
 
 // DOCUMENT READY FUNCTION
 $(document).ready(function(){
-
+        $("input").keydown(function(event){
+        if(event.keyCode == 13){
+        $("button").click();
+  }
+});
         $("button").click(function(){
                 var pokemon = ["row","pop","lit"];
                 var RPL = Math.floor((Math.random()*3));
