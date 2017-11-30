@@ -26,12 +26,56 @@
 
 // DOCUMENT READY FUNCTION
 $(document).ready(function(){
-        var pokemon = ["row","pop","lit"];
-        var RPL = Math.floor((Math.random()*3));
-        console.log(pokemon[RPL]);
 
         $("button").click(function(){
+                var pokemon = ["row","pop","lit"];
+                var RPL = Math.floor((Math.random()*3));
+                var comchoice = pokemon[RPL]
+                console.log(comchoice);
                 var input = $("#input").val();
-                $("#endtext").append(Math.floor(pokemon[RPL]));
+                var lowercase = input.toLowerCase();
+                console.log("hi");
+                
+        if(input === "lit" && comchoice === "lit"){
+                $("#userpic").attr("src", "images/litten.jpg");
+                $("#compic").attr("src", "images/litten.jpg");
+                $("#result").attr("src", "images/tie.png");
+        }else if(input === "lit" && comchoice === "pop"){
+                $("#userpic").attr("src", "images/litten.jpg");
+                $("#compic").attr("src", "images/popplio.jpg");
+                $("#result").attr("src", "images/lose.png");
+        }else if(input === "lit" && comchoice === "row"){
+                $("#userpic").attr("src", "images/litten.jpg");
+                $("#compic").attr("src", "images/rowlet.jpg");
+                $("#result").attr("src", "images/win.png");
+                
+        }else if(input === "pop" && comchoice === "lit"){
+                $("#userpic").attr("src", "images/popplio.jpg");
+                $("#compic").attr("src", "images/litten.jpg");
+                $("#result").attr("src", "images/win.png");
+        }else if(input === "pop" && comchoice === "pop"){
+                $("#userpic").attr("src", "images/popplio.jpg");
+                $("#compic").attr("src", "images/popplio.jpg");
+                $("#result").attr("src", "images/tie.png");
+        }else if(input === "pop" && comchoice === "row"){
+                $("#userpic").attr("src", "images/popplio.jpg");
+                $("#compic").attr("src", "images/rowlet.jpg");
+                $("#result").attr("src", "images/lose.png");
+                
+        }else if(input === "row" && comchoice === "lit"){
+                $("#userpic").attr("src", "images/rowlet.jpg");
+                $("#compic").attr("src", "images/litten.jpg");
+                $("#result").attr("src", "images/lose.png");
+        }else if(input === "row" && comchoice === "pop"){
+                $("#userpic").attr("src", "images/rowlet.jpg");
+                $("#compic").attr("src", "images/popplio.jpg");
+                $("#result").attr("src", "images/win.png");
+        }else if(input === "row" && comchoice === "row"){
+                $("#userpic").attr("src", "images/rowlet.jpg");
+                $("#compic").attr("src", "images/rowlet.jpg");
+                $("#result").attr("src", "images/tie.png");
+        }else if(input === "wisely"){
+                alert("Didn't mean it literally");
+        }
         });
 });
