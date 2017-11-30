@@ -34,7 +34,7 @@ $(document).ready(function(){
                 console.log(comchoice);
                 var input = $("#input").val().toLowerCase();
                 console.log("I've been found");
-                
+//Litten                
         if(input === "lit" && comchoice === "lit"){
                 $("#userpic").attr("src", "images/litten.jpg");
                 $("#compic").attr("src", "images/litten.jpg");
@@ -47,7 +47,7 @@ $(document).ready(function(){
                 $("#userpic").attr("src", "images/litten.jpg");
                 $("#compic").attr("src", "images/rowlet.jpg");
                 $("#result").attr("src", "images/win.png");
-                
+//Litten                
         }else if(input === "pop" && comchoice === "lit"){
                 $("#userpic").attr("src", "images/popplio.jpg");
                 $("#compic").attr("src", "images/litten.jpg");
@@ -60,7 +60,7 @@ $(document).ready(function(){
                 $("#userpic").attr("src", "images/popplio.jpg");
                 $("#compic").attr("src", "images/rowlet.jpg");
                 $("#result").attr("src", "images/lose.png");
-                
+//Rowlet              
         }else if(input === "row" && comchoice === "lit"){
                 $("#userpic").attr("src", "images/rowlet.jpg");
                 $("#compic").attr("src", "images/litten.jpg");
@@ -73,6 +73,7 @@ $(document).ready(function(){
                 $("#userpic").attr("src", "images/rowlet.jpg");
                 $("#compic").attr("src", "images/rowlet.jpg");
                 $("#result").attr("src", "images/tie.png");
+//Extra
         }else if(input === "wisely"){
                 alert("Didn't mean it literally, but you get the prize of nothing anyway");
         }else if(input === "ultra"){
