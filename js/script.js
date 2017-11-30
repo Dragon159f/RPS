@@ -32,9 +32,8 @@ $(document).ready(function(){
                 var RPL = Math.floor((Math.random()*3));
                 var comchoice = pokemon[RPL]
                 console.log(comchoice);
-                var input = $("#input").val();
-                var lowercase = input.toLowerCase();
-                console.log("hi");
+                var input = $("#input").val().toLowerCase();
+                console.log("I've been found");
                 
         if(input === "lit" && comchoice === "lit"){
                 $("#userpic").attr("src", "images/litten.jpg");
@@ -75,7 +74,11 @@ $(document).ready(function(){
                 $("#compic").attr("src", "images/rowlet.jpg");
                 $("#result").attr("src", "images/tie.png");
         }else if(input === "wisely"){
-                alert("Didn't mean it literally");
+                alert("Didn't mean it literally, but you get the prize of nothing anyway");
+        }else if(input === "ultra"){
+                $("#gen7start").attr("src", "https://www.pokemon-sunmoon.com/ultra/assets/img/home/Pokemon_UltraSun_Pokemon_UltraMoon.jpg");
+        }else{
+                alert("Only type Row, Pop, or Lit");
         }
-        });
+ });
 });
