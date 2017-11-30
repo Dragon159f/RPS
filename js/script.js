@@ -82,6 +82,10 @@ $(document).ready(function(){
                 alert("Didn't mean it literally, but you get the prize of nothing anyway");
         }else if(input === "ultra"){
                 $("#gen7start").attr("src", "https://www.pokemon-sunmoon.com/ultra/assets/img/home/Pokemon_UltraSun_Pokemon_UltraMoon.jpg");
+        }else if(input === "help"){
+                $("#gen7start").attr("src", "http://pokemonaustralia.com/wp-content/uploads/2013/01/XY_Starter-Type-Infographic.jpg");
+        }else if(input === ""){
+                $("#gen7start").attr("src", "images/Starters07.jpg");
         }else{
                 alert("Only type Row, Pop, or Lit");
         }
