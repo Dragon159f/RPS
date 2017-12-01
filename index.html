@@ -11,28 +11,38 @@
   </head>
 
   <body>
-    <div class="container text-center">
-    <h1>The RPS Game(Pokemon Edition)</h1>
-    <p>Instuctions: Choose either <span style="color: green">Row(Grass)</span>, <span style="color: blue">Pop(Water)</span>, or <span style="color: red">Lit(Fire)</span> and see if you win the prize of nothing.</p>
-    <img id="gen7start" src="images/Starters07.jpg">
-    <p>Choose wisely to get absolutely nothing.</p>
-    <input id="input" type="text" onfocus="this.value=''">
-    <button>Enter</button>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="images/questionmark.png" id="userpic">
-      </div>
-      <div class="col-md-4">
-        <img src="images/transparent.png" id="result">
-      </div>
-      <div class="col-md-4">
-        <img src="images/questionmark.png" id="compic">
-      </div>
-    </div>
     
-    <div class = "row">
-      <div class="col-md-12">
-        <p id="endtext"></p>
+    <div class="container text-center">
+      <h1>The RPS Game(Pokemon Edition)</h1>
+      <p>Instuctions: Choose either <span style="color: green">Row(Grass)</span>, <span style="color: blue">Pop(Water)</span>, or <span style="color: red">Lit(Fire)</span> and see if you win the prize of nothing.</p>
+        <div id="mode">
+        <h4>Change Modes</h4>
+        <button id="player">Player vs. Player</button>
+        <button id="computer">Player vs. Computer</button>
+      </div>
+        <img id="gen7start" src="images/Starters07.jpg">
+      <p>Choose wisely to get absolutely nothing.</p>
+      <input id="input1" placeholder="Player 1" type="text" onfocus="this.value=''">
+      <button id="p1button">Enter</button>
+      <input id="input2" placeholder="Player 2" type="text" onfocus="this.value=''">
+      <button id="p2button">Enter</button>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/questionmark.png" id="userpic">
+        </div>
+        <div class="col-md-4">
+          <img src="images/transparent.png" id="result">
+        </div>
+        <div class="col-md-4">
+          <img src="images/questionmark.png" id="compic">
+        </div>
+      </div>
+    
+      <div class = "row">
+        <div class="col-md-12">
+          <p id="endtext"></p>
+        </div>
       </div>
     </div>
   </body>
