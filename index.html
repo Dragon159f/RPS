@@ -14,11 +14,12 @@
     
     <div class="container text-center">
       <h1>The RPS Game(Pokemon Edition)</h1>
-      <p>Instuctions: Choose either <span style="color: green">Row(Grass)</span>, <span style="color: blue">Pop(Water)</span>, or <span style="color: red">Lit(Fire)</span> and see if you win the prize of nothing.</p>
+      <p><span style= "color: Orange">Instuctions:</span> Choose either <span style="color: green">Row(Grass)</span>, <span style="color: blue">Pop(Water)</span>, or <span style="color: red">Lit(Fire)</span> and see if you win the prize of nothing.</p>
         <div id="mode">
-        <h4>Change Modes</h4>
+        <h4>Modes</h4>
         <button id="player">Player vs. Player</button>
         <button id="computer">Player vs. Computer</button>
+        <button id="buttonChoice">Button Choice</button>
       </div>
         <img id="gen7start" src="images/Starters07.jpg">
       <p>Choose wisely to get absolutely nothing.</p>
@@ -26,15 +27,20 @@
       <button id="p1button">Enter</button>
       <input id="input2" placeholder="Player 2" type="text" onfocus="this.value=''">
       <button id="p2button">Enter</button>
+      <button id="row" class="pokemon" onfocus="this.value=''"><span style="color: green">Row</span></button>
+      <button id="pop" class="pokemon" onfocus="this.value=''"><span style="color: blue">Pop</span></button>
+      <button id="lit" class="pokemon" onfocus="this.value=''"><span style="color: red">Lit</span></button>
       
       <div class="row">
         <div class="col-md-4">
+          <p>Player Choice</p>
           <img src="images/questionmark.png" id="userpic">
         </div>
         <div class="col-md-4">
           <img src="images/transparent.png" id="result">
         </div>
         <div class="col-md-4">
+          <p class="text">Computer Choice</p>
           <img src="images/questionmark.png" id="compic">
         </div>
       </div>

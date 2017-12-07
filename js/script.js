@@ -27,6 +27,7 @@
 // DOCUMENT READY FUNCTION
 $(document).ready(function(){
         $("#input2").hide(); 
+        $(".pokemon").hide();
         $("#p2button").hide();
         $("#input1").keydown(function(event){
         if(event.keyCode == 13){
@@ -35,14 +36,19 @@ $(document).ready(function(){
 });
 
         $("#player").click(function(){
-        $("#input2").show();
-        $("#p2button").show();
-        $("#p1button").hide();
+        $("#input1, #input2, #p2button").show();
+        $("#p1button, .pokemon").hide();
+        $(".text").text("Player 2 Choice");
 });
         $("#computer").click(function(){
-        $("#input2").hide();
-        $("#p2button").hide();
-        $("#p1button").show();
+        $("#input2, .pokemon, #p2button").hide();
+        $("#input1, #p1button").show();
+        $(".text").text("Computer Choice");
+});     
+        $("#buttonChoice").click(function(){
+        $(".pokemon").show();
+        $("#input1, #input2, #p1button,#p2button").hide();
+        $(".text").text("Computer Choice");
 });
 
         $("#p1button").click(function(){
@@ -153,3 +159,7 @@ $(document).ready(function(){
         }
  });
 });
+
+//$("#buttonChoice").click(function(){
+//        var  input3 = $("#input3").val().toLowerCase();
+//}
